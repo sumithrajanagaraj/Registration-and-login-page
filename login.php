@@ -1,3 +1,6 @@
+<?php
+require "connection.php"
+?>
 <html>
 <title>My login page</title>
 <head>
@@ -24,13 +27,33 @@ a{text-decoration:none; color:red; padding:5px; }
 <input type="text" title="Enter the name;"><br><br>
 <label for="pwd">Password:</label>
 <input type="password" title="Enter the password"><br><br><br><br>
-<input type="submit" value="Log In" class="a1"><br><br>
+<a href="welcome.php">
+<input type="submit" value="Log In" name="submit" class="a1"><br><br>
+</a>
+<?php
+if(isset($_POST['submit']))
+{
+if(isset($_POST['First_name'])&&isset($_POST['pass']))
+	$password=md5($_POST['pass']);
+    $fname=$_POST['First_name'];
+	$sql="SELECT Name,Password FROM register_info where Name='$fname' AND password='$password'";
+	$result->$conn->query($sql);
+	if($result)
+	{
+		echo "Welcome!!";
+		
+	}
+	else
+	{
+		echo "Username or password is incorrect!!.";
+	}
+}
+?>
 <a href="forget">Forgetten Password</a><br><br><br>
 </p>
 <p style="text-align:center;">
 <a href="Registration.php" style="border:2px solid red; font-size:30px;">REGISTER</a>
 </p>
 </fieldset>
-
 </body>
 </html>

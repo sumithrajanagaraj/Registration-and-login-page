@@ -1,3 +1,4 @@
+
 <html>
 <title>Registration Form</title>
 <head>
@@ -18,14 +19,17 @@ a{text-decoration:none; color:red; padding:0px;  font-size:40px; margin:0em; }
 <a href="login.php">LOGIN</a>
 <p class="or">OR</p>
 <p style="color:red;font-size:40px; text-align:center; padding:0em; margin:0em;">Register</p>
-
+<table>
+<colgroup width="100%">
+<col width="50%">
+<col width="50%">
+</colgroup>
 <fieldset>
 <legend>
 <p><?php echo "Registration Form" ?></p>
 </legend>
 <b><label for="name">First Name:</label></b>
-<input type="text" name="First_name" title="Enter the firstname;" placeholder="Enter The Firstname"/>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
-<b><label for="name">Middle Name:</label></b>
+<input type="text" name="First_name" title="Enter the firstname;" placeholder="Enter The Firstname"/></td>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;><b><label for="name">Middle Name:</label></b>
 <input type="text" title="Enter the Middlename;" name="Middle_name" placeholder="Enter The Middlename"/><br><br> 
 <b><label for="name">Father Name:</label></b>
 <input type="text" title="Enter the Fathers name;" name="Fathers_name" placeholder="Enter The Father's name"/>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
@@ -60,7 +64,7 @@ a{text-decoration:none; color:red; padding:0px;  font-size:40px; margin:0em; }
 <input type="Reset" value="Reset" required>
 
 </fieldset>
-
+</table>
 </form>
 </div>
 </body>
